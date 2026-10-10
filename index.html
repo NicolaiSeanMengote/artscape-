@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artscape | Fonts, colors, and art forms for creatives</title>
+  <meta name="description" content="Artscape is a learning and inspiration library of fonts, color palettes, and art forms for creatives.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Cormorant+Garamond&family=Merriweather&family=Montserrat&family=Poppins&family=Work+Sans&family=DM+Sans:wght@400;700&family=Pacifico&family=Dancing+Script&family=Great+Vibes&family=Bebas+Neue&family=Abril+Fatface&family=Righteous&family=Caveat&family=Permanent+Marker&family=Space+Mono&family=Courier+Prime&family=Bricolage+Grotesque:wght@500;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Artscape home">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="15" cy="15" r="11" fill="#2F45FF"/>
+          <circle cx="26" cy="15" r="11" fill="#E6358B" style="mix-blend-mode:multiply"/>
+          <circle cx="20.5" cy="26" r="11" fill="#FFC93C" style="mix-blend-mode:multiply"/>
+        </svg>
+        Artscape
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="fonts.html">Fonts</a>
+        <a href="palettes.html">Color Palettes</a>
+        <a href="art-forms.html">Art Forms</a>
+        <a href="contact.html">About and Contact</a>
+        <a href="collection.html">My Collection <span id="fav-count" class="count-badge" hidden>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="wordmark" aria-label="Artscape"><span aria-hidden="true">A</span><span aria-hidden="true">r</span><span aria-hidden="true">t</span><span aria-hidden="true">s</span><span aria-hidden="true">c</span><span aria-hidden="true">a</span><span aria-hidden="true">p</span><span aria-hidden="true">e</span></h1>
+        <p class="lead">Look up fonts, color palettes, and art forms in one place, then save your favorites to build your own collection.</p>
+        <div class="actions">
+          <a class="btn" href="fonts.html">Browse fonts</a>
+          <a class="btn btn-sun" href="palettes.html">See color palettes</a>
+          <a class="btn btn-ghost" href="art-forms.html">Explore art forms</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tiles">
+          <a class="tile tile--fonts" href="fonts.html">
+            <h3>Fonts</h3>
+            <p><span id="count-fonts">0</span> typefaces you can preview with your own words and copy as CSS.</p>
+          </a>
+          <a class="tile tile--palettes" href="palettes.html">
+            <h3>Color palettes</h3>
+            <p><span id="count-palettes">0</span> five-color sets. Click any color to copy its hex code.</p>
+          </a>
+          <a class="tile tile--art" href="art-forms.html">
+            <h3>Art forms</h3>
+            <p><span id="count-art">0</span> ways to make art, with tools and starter tips for each.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Today's picks</h2>
+          <button type="button" class="btn btn-small" id="shuffle">Shuffle picks</button>
+        </div>
+        <div class="grid" id="featured"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Search or filter</strong>Find what you need by name, mood, or category.</li>
+          <li><strong>Try it out</strong>Preview fonts with your own text and copy colors with one click.</li>
+          <li><strong>Save it</strong>Tap the heart to keep it in My Collection. Your picks stay on this device.</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Artscape is a final project for Integrative Programming Technologies by Nicolai Sean P. Mengote (INF248MAA).</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
