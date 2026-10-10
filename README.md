@@ -46,7 +46,6 @@ Artscape is a learning and inspiration library for people in creative fields. It
 2. Open `index.html` in a web browser.
 3. Stay online so the Google Fonts previews can load.
 
-No installation or build step is needed.
 
 ## Folder structure
 
@@ -71,15 +70,3 @@ artscape/
     art-forms.js    art forms page
     collection.js   collection page
     contact.js      contact form and validation
-```
-
-## Screenshots
-
-Add a screenshot of each page here:
-
-- Home
-- Fonts
-- Color Palettes
-- Art Forms (including the detail dialog)
-- About and Contact
-- My Collection
