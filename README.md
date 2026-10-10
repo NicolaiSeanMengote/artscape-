@@ -40,12 +40,6 @@ Artscape is a learning and inspiration library for people in creative fields. It
 - Local Storage for saved items and form suggestions
 - Google Fonts for the font previews
 
-## How to run
-
-1. Download or clone this repository.
-2. Open `index.html` in a web browser.
-3. Stay online so the Google Fonts previews can load.
-
 
 ## Folder structure
 
