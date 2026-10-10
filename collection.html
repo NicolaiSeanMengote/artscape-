@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Collection | Artscape</title>
+  <meta name="description" content="Your saved fonts, color palettes, and art forms on Artscape.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Cormorant+Garamond&family=Merriweather&family=Montserrat&family=Poppins&family=Work+Sans&family=DM+Sans:wght@400;700&family=Pacifico&family=Dancing+Script&family=Great+Vibes&family=Bebas+Neue&family=Abril+Fatface&family=Righteous&family=Caveat&family=Permanent+Marker&family=Space+Mono&family=Courier+Prime&family=Bricolage+Grotesque:wght@500;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Artscape home">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="15" cy="15" r="11" fill="#2F45FF"/>
+          <circle cx="26" cy="15" r="11" fill="#E6358B" style="mix-blend-mode:multiply"/>
+          <circle cx="20.5" cy="26" r="11" fill="#FFC93C" style="mix-blend-mode:multiply"/>
+        </svg>
+        Artscape
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="fonts.html">Fonts</a>
+        <a href="palettes.html">Color Palettes</a>
+        <a href="art-forms.html">Art Forms</a>
+        <a href="contact.html">About and Contact</a>
+        <a href="collection.html" aria-current="page">My Collection <span id="fav-count" class="count-badge" hidden>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="container">
+      <div class="page-head">
+        <h1>My Collection</h1>
+        <p id="collection-summary" aria-live="polite"></p>
+        <div class="actions" id="collection-actions" hidden>
+          <button type="button" class="btn btn-ghost btn-small" id="copy-list" data-copy="" data-toast="Collection list copied">Copy list</button>
+          <button type="button" class="btn btn-ghost btn-small" id="clear-all">Clear all</button>
+        </div>
+      </div>
+      <div id="collection"></div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Artscape is a final project for Integrative Programming Technologies by Nicolai Sean P. Mengote (INF248MAA).</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/collection.js"></script>
+</body>
+</html>

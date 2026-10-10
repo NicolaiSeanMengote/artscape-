@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About and Contact | Artscape</title>
+  <meta name="description" content="Learn about Artscape and suggest a font, palette, or art form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Cormorant+Garamond&family=Merriweather&family=Montserrat&family=Poppins&family=Work+Sans&family=DM+Sans:wght@400;700&family=Pacifico&family=Dancing+Script&family=Great+Vibes&family=Bebas+Neue&family=Abril+Fatface&family=Righteous&family=Caveat&family=Permanent+Marker&family=Space+Mono&family=Courier+Prime&family=Bricolage+Grotesque:wght@500;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Artscape home">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="15" cy="15" r="11" fill="#2F45FF"/>
+          <circle cx="26" cy="15" r="11" fill="#E6358B" style="mix-blend-mode:multiply"/>
+          <circle cx="20.5" cy="26" r="11" fill="#FFC93C" style="mix-blend-mode:multiply"/>
+        </svg>
+        Artscape
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="fonts.html">Fonts</a>
+        <a href="palettes.html">Color Palettes</a>
+        <a href="art-forms.html">Art Forms</a>
+        <a href="contact.html" aria-current="page">About and Contact</a>
+        <a href="collection.html">My Collection <span id="fav-count" class="count-badge" hidden>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="container">
+      <div class="page-head">
+        <h1>About and contact</h1>
+      </div>
+
+      <div class="split">
+        <section>
+          <h2>About Artscape</h2>
+          <p>Artscape is a learning and inspiration library for people in creative fields: designers, illustrators, photographers, crafters, and students. It puts fonts, color palettes, and art forms in one place so you can look things up quickly.</p>
+          <p>Everything you save stays in your own browser using Local Storage, so there is no account to create.</p>
+          <h3>Built with</h3>
+          <ul class="stack-list">
+            <li>HTML, CSS, and JavaScript</li>
+            <li>Local Storage for saved items and suggestions</li>
+            <li>Google Fonts for the font previews</li>
+          </ul>
+          <h3>Your recent suggestions</h3>
+          <ul class="submissions" id="submissions"></ul>
+          <button type="button" class="btn btn-ghost btn-small" id="clear-suggestions" hidden>Clear suggestions</button>
+        </section>
+
+        <section>
+          <h2>Suggest something to add</h2>
+          <div class="success" id="success" tabindex="-1" hidden></div>
+          <form id="suggest-form" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+              <p class="error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+              <p class="error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="kind">What are you suggesting?</label>
+              <select id="kind" name="kind" aria-describedby="kind-error">
+                <option value="">Choose one</option>
+                <option value="Font">Font</option>
+                <option value="Color palette">Color palette</option>
+                <option value="Art form">Art form</option>
+              </select>
+              <p class="error" id="kind-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="title">Name of your suggestion</label>
+              <input type="text" id="title" name="title" aria-describedby="title-error">
+              <p class="error" id="title-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="link">Link (optional)</label>
+              <input type="url" id="link" name="link" placeholder="https://" aria-describedby="link-error">
+              <p class="error" id="link-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="details">Why should it be added?</label>
+              <textarea id="details" name="details" rows="4" aria-describedby="details-error details-count"></textarea>
+              <p class="hint" id="details-count">0 characters</p>
+              <p class="error" id="details-error" aria-live="polite"></p>
+            </div>
+            <button type="submit" class="btn">Send suggestion</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Artscape is a final project for Integrative Programming Technologies by Nicolai Sean P. Mengote (INF248MAA).</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
