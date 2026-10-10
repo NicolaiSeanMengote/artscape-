@@ -2,7 +2,7 @@
 
 **Student:** Nicolai Sean P. Mengote
 **Section/Block:** INF248MAA
-**Subject:** Integrative Programming Technologies (Individual Final Project: Website Development)
+**Subject:** Integrative Programming Technologies
 **Website category:** Education (a learning and inspiration resource for creatives)
 
 ## Project description
